@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Reg Form </title>
+    </head>
+
+<body>
+     <h1> Employee Registration Form</h1>
+    <form action="welcome.html"  method="get" novalidate target="_blank">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full Name:</label>
+        <input type="text" name="reg_name" pattern="[A-Za-z ]{3,50}" placeholder="Enter Your Name"/>
+        <br />
+        <br />
+
+        <label>Email:</label>
+        <input type="email"  name="reg_email" pattern="[a-zA-Z]+\.{1}[0-9]{6}@infinitytech\.ac\.in" placeholder="Enter Your Email"/>
+        <br />
+        <br />
+
+        <label>Password:</label>
+        <input type="password" name="reg_password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" placeholder="Enter Your Password"/>
+        <br />
+        <br />
+
+        <label>Phone number:</label>
+        <input type="tel" name="reg_phone" pattern="[0-9]{10}" placeholder="Phone Number"/>
+        <br />
+        <br />
+
+        <label>Age:</label>
+        <input type="number" name="reg_age" pattern="[0-9]{2}" placeholder="Enter Your Age"/>
+        <br />
+        <br />
+
+        <label>Gender:</label>
+        <input type="radio" name="reg_gender" value="Male" checked/><label>Male</label> 
+        <input type="radio" name="reg_gender" value="Female"/><label>Female</label>
+        <br />
+        <br />
+
+        <label> Marital status :</label>
+        <input type="checkbox" name="Reg_status" value="Married" checked/><label> Married</label>
+        <input type="checkbox" name="Reg_status" value="Unmarried"/><label> Unmarried </label>
+        <input type="checkbox" name="Reg_status" value="Single"/><label> Single </label>
+        <br/>
+        <br/>
+
+        <label> Address : </label>
+        <input type="text" name="reg_name" pattern="[A-Za-z ]{3,50}" placeholder="Enter Your Address" />
+        <br />
+        <br />
+
+
+        
+    </fieldset>
+
+        <fieldset>
+        <legend>Professional Information</legend>
+
+        <label>Upload Profile Picture:</label>
+        <input type="file" name="reg_file" />
+        <br />
+        <br />
+
+        <label>Upload Your Resume:</label>
+        <input type="file" name="reg_file" />
+        <br />
+        <br />
+
+
+
+        <label>Personal Website:</label>
+        <input type="url" pattern="https?://.+" name="reg_url" placeholder="Enter Your URL"/>
+        <br />
+        <br />
+
+        <label> Linkdin Profile :</label>
+        <input type="url" pattern="https?://.+" name="reg_url" placeholder="Enter Your URL"/>
+        <br />
+        <br />
+
+        <label> Emp Code :</label>
+        <input type="text" name="reg_Code" placeholder="Enter Your Code"/>
+        <br/>
+        <br/>
+
+        <label>Preferred Country:</label>
+        <input list="countries" name="reg_country" placeholder="Enter Your Country"/>
+        <datalist id="countries">
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option selected value="India">India</option>
+          <option value="Japan">Japan</option>
+        </datalist>
+        <br/>
+        <br/>
+        
+        <label>Agree to Terms:</label>
+        <input type="checkbox" name="reg_agree" value="I agree"/><label>I agree</label>
+        <br/>
+        <br/>
+        Hobbies
+        <input type="checkbox" name="reg_hobbies[]" value="Cricket"/><label>Cricket</label>
+        <input type="checkbox" name="reg_hobbies[]" value="Dance"/><label>Dance</label>
+        <input type="checkbox" name="reg_hobbies[]" value="Paint"/><label>Paint</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Date & Time Info</legend>
+
+        <label>Select Date of Birth: </label>
+        <input type="date" name="reg_dob"/>
+        <br />
+        <br />
+
+        <label>Select Time: </label>
+        <input type="time" name="reg_time"/>
+        <br />
+        <br />
+
+        <label>Select month: </label>
+        <input type="month" name="reg_month"/>
+        <br />
+        <br />
+
+        <label>Select week: </label>
+        <input type="week" name="reg_week"/>
+        <br />
+        <br />
+
+        <label>Select date and time: </label>
+        <input type="datetime-local" name="reg_datetime"/>
+        <br />
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Form Controls</legend>
+
+        <button onclick="sub()" multiple>Click Me</button>
+        <input type="image" src="Image2.png" alt="Register Now" height="50" width="50" />
+        <br /><br />
+
+        <input type="submit" />
+        <br /><br />
+
+        <input type="reset" />
+        <br /><br />
+      </fieldset>
+    </form>
+    <script>
+      function sub()
+      {
+
+      }
+      </script>  
+
+      
+</body>
+</html>
